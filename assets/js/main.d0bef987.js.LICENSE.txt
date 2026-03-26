@@ -50,6 +50,14 @@
  */
 
 /*!
+ * Lunr languages, `Korean` language
+ * https://github.com/turbobit/lunr-languages
+ *
+ * Copyright 2021, Manikandan Venkatasubban
+ * http://www.mozilla.org/MPL/
+ */
+
+/*!
  * Lunr languages, `Portuguese` language
  * https://github.com/MihaiValentin/lunr-languages
  *
