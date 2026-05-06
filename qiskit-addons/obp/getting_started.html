@@ -14,8 +14,8 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"doQumentation","applicationCategory":"EducationalApplication","operatingSystem":"Web, Docker, Raspberry Pi","description":"Open-source frontend for IBM Quantum documentation with live Jupyter code execution, simulator mode, and offline support.","url":"https://doqumentation.org","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"license":"https://www.apache.org/licenses/LICENSE-2.0"}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script><link rel="stylesheet" href="/assets/css/styles.171a766f.css">
-<script src="/assets/js/runtime~main.dd784b9b.js" defer="defer"></script>
-<script src="/assets/js/main.6551c085.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.e5987ced.js" defer="defer"></script>
+<script src="/assets/js/main.a1925b06.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -120,7 +120,7 @@ circuit = generate_time_evolution_circuit(
 circuit.draw(&quot;mpl&quot;, style=&quot;iqp&quot;, scale=0.6)
 ```
 
-![Quantum circuit diagram](./_01_getting_started_imgs/output_2.png)
+![Quantum circuit diagram](/img/qiskit-addons/obp/01-getting-started/output_2.png)
 
 ## Langkah 2: Optimumkan masalah \{#step-2-optimize-the-problem}
 ### Cipta kepingan Circuit untuk backpropagate \{#create-circuit-slices-to-backpropagate}
@@ -190,7 +190,7 @@ Note that backpropagating one more slice would result in 27 terms across 12 grou
 The remaining circuit after backpropagation looks as follows:
 ```
 
-![Quantum circuit diagram](./_01_getting_started_imgs/output_3.png)
+![Quantum circuit diagram](/img/qiskit-addons/obp/01-getting-started/output_3.png)
 
 Seterusnya, kita akan menyatakan masalah yang sama dengan kekangan yang sama pada saiz observable output. Walau bagaimanapun, kali ini, kita memperuntukkan belanjawan ralat kepada setiap kepingan menggunakan fungsi [setup_budet](https://qiskit.github.io/qiskit-addon-obp/stubs/qiskit_addon_obp.utils.truncating.setup_budget.html). Istilah Pauli dengan pekali kecil akan dipangkas dari setiap kepingan sehingga belanjawan ralat dipenuhi, dan baki belanjawan akan ditambahkan ke belanjawan kepingan berikutnya.
 
@@ -237,7 +237,7 @@ Note that backpropagating one more slice would result in 27 terms across 13 grou
 The remaining circuit after backpropagation looks as follows:
 ```
 
-![Quantum circuit diagram](./_01_getting_started_imgs/output_4.png)
+![Quantum circuit diagram](/img/qiskit-addons/obp/01-getting-started/output_4.png)
 
 ### Sekarang kita sudah mempunyai ansatz yang dikurangkan dan observable yang diperluaskan, kita boleh transpile eksperimen kita ke Backend. \{#now-that-we-have-our-reduced-ansatze-and-expanded-observables-we-can-transpile-our-experiments-to-the-backend}
 
