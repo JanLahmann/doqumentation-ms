@@ -14,8 +14,8 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"doQumentation","applicationCategory":"EducationalApplication","operatingSystem":"Web, Docker, Raspberry Pi","description":"Open-source frontend for IBM Quantum documentation with live Jupyter code execution, simulator mode, and offline support.","url":"https://doqumentation.org","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"license":"https://www.apache.org/licenses/LICENSE-2.0"}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script><link rel="stylesheet" href="/assets/css/styles.09715444.css">
-<script src="/assets/js/runtime~main.fa08586f.js" defer="defer"></script>
-<script src="/assets/js/main.6066f22d.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.17d1e3d7.js" defer="defer"></script>
+<script src="/assets/js/main.39f80756.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -49,15 +49,15 @@
 </ul>
 <p><a href="https://scipy.org/" target="_blank" rel="noopener noreferrer" class="">SciPy</a> ialah perpustakaan Python sumber terbuka percuma dengan pakej yang relevan dalam banyak bidang pengkomputeran saintifik, termasuk pengoptimuman. Secara khusus, SciPy mempunyai pakej pengoptimuman yang merangkumi <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html" target="_blank" rel="noopener noreferrer" class="">minimize</a>:</p>
 <p><code>from scipy.optimize import minimize</code>
-This minimize function has several arguments, but the most relevant arguments for quantum chemistry are:</p>
+Fungsi <code>minimize</code> ini mempunyai beberapa argumen, tetapi yang paling relevan untuk kimia kuantum adalah:</p>
 <ul>
-<li class="">The cost function (<code>cost_func</code>). This is related to the Hamiltonian, but also includes some complexities, such as determining the expectation value by using Estimator, and in the case of excited state calculations, might include orthogonality conditions.</li>
-<li class="">An initial state (x0) for the system, often the Hartree Fock state</li>
-<li class="">Other arguments, including arguments of the cost function itself</li>
-<li class="">The method set to the classical optimizer you select</li>
-<li class="">Options for the classical optimizer (not to be confused with Session options discussed in the next section)</li>
+<li class="">Fungsi kos (<code>cost_func</code>). Ia berkaitan dengan Hamiltonian, tetapi juga merangkumi beberapa kerumitan, seperti menentukan nilai jangkaan dengan menggunakan Estimator, dan dalam kes pengiraan keadaan teruja, mungkin merangkumi syarat keortogonalan.</li>
+<li class="">Keadaan permulaan (<code>x0</code>) untuk sistem, selalunya keadaan Hartree-Fock</li>
+<li class="">Argumen lain, termasuk argumen fungsi kos itu sendiri</li>
+<li class="">Parameter <code>method</code> yang ditetapkan kepada pengoptimum klasik yang kamu pilih</li>
+<li class="">Pilihan untuk pengoptimum klasik (jangan keliru dengan pilihan Session yang dibincangkan dalam bahagian seterusnya)</li>
 </ul>
-<p>Some example code is shown below. We restrict our discussion here to the last two arguments.</p>
+<p>Beberapa contoh kod ditunjukkan di bawah. Kami hadkan perbincangan di sini kepada dua argumen terakhir.</p>
 <div class="language-minimize( codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-minimize( codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">    cost_func,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    x0,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    args=(ansatz, hamiltonian, estimator),</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    method=&quot;cobyla&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    options={&quot;maxiter&quot;: 200})</span><br></span></code></pre></div></div>
 <p>SciPy mempunyai dokumentasi tentang semua kaedah minimize yang tersedia. Berikut adalah beberapa contoh yang patut diperhatikan, semuanya merupakan kaedah untuk meminimumkan fungsi skalar satu atau lebih pemboleh ubah:</p>
 <ul>
