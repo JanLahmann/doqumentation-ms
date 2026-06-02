@@ -14,8 +14,8 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"doQumentation","applicationCategory":"EducationalApplication","operatingSystem":"Web, Docker, Raspberry Pi","description":"Open-source frontend for IBM Quantum documentation with live Jupyter code execution, simulator mode, and offline support.","url":"https://doqumentation.org","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"license":"https://www.apache.org/licenses/LICENSE-2.0"}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script><link rel="stylesheet" href="/assets/css/styles.09715444.css">
-<script src="/assets/js/runtime~main.3efc0495.js" defer="defer"></script>
-<script src="/assets/js/main.c5892545.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.f66e6301.js" defer="defer"></script>
+<script src="/assets/js/main.b892d483.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -34,7 +34,7 @@
 <p>Maklumat dari simulasi fasa gas HF dan definisi ruang aktif diambil sebagai input. Yang penting, ia juga menggunakan maklumat yang ditentukan pengguna dari bahagian input berkaitan penindasan ralat, bilangan shot, tahap pengoptimuman Transpiler litar, dan susun atur Qubit.</p>
 <p>Ia menjana kamiran satu-elektron dan dua-elektron dalam ruang aktif yang ditentukan. Kamiran tersebut kemudian digunakan untuk melakukan pengiraan CCSD klasik, yang mengembalikan amplitud t2 yang digunakan untuk memparameter litar LUCJ.</p>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-optimize-the-circuit">2. Optimumkan Circuit<a href="#2-optimize-the-circuit" class="hash-link" aria-label="Pautan terus ke 2. Optimumkan Circuit" title="Pautan terus ke 2. Optimumkan Circuit" translate="no">​</a></h4>
-<p>Circuit LUCJ kemudian ditranspil menjadi litar ISA untuk perkakasan sasaran. Primitif Sampler kemudian dimulakan dengan set lalai pilihan pengurangragaman ralat untuk mengurus pelaksanaan.</p>
+<p>Circuit LUCJ kemudian ditranspil menjadi litar ISA untuk perkakasan sasaran. Primitif Sampler kemudian dimulakan dengan set lalai pilihan pengurangan ralat untuk mengurus pelaksanaan.</p>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-execute-the-circuit">3. Jalankan Circuit<a href="#3-execute-the-circuit" class="hash-link" aria-label="Pautan terus ke 3. Jalankan Circuit" title="Pautan terus ke 3. Jalankan Circuit" translate="no">​</a></h4>
 <p>Pengiraan LUCJ mengembalikan bitstring bagi setiap pengukuran, di mana bitstring ini sepadan dengan konfigurasi elektron sistem yang dikaji. Bitstring kemudian digunakan sebagai input untuk pemprosesan pasca.</p>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-post-process-by-using-sqd">4. Proses pasca menggunakan SQD<a href="#4-post-process-by-using-sqd" class="hash-link" aria-label="Pautan terus ke 4. Proses pasca menggunakan SQD" title="Pautan terus ke 4. Proses pasca menggunakan SQD" translate="no">​</a></h4>
@@ -98,7 +98,6 @@ Selepas kerja selesai, keseluruhan output log akan tersedia.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="next-steps">Langkah seterusnya<a href="#next-steps" class="hash-link" aria-label="Pautan terus ke Langkah seterusnya" title="Pautan terus ke Langkah seterusnya" translate="no">​</a></h2>
 <div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Cadangan</div><div class="admonitionContent_BuS1"><ul>
 <li class="">Semak panduan membina templat fungsi untuk <a class="" href="/guides/function-template-hamiltonian-simulation">simulasi Hamiltonian</a></li>
-<li class="">Review the guide on building a function template for <a class="" href="/guides/function-template-hamiltonian-simulation">Hamiltonian simulation</a></li>
 <li class="">Lihat fail sumber untuk templat ini di <a href="https://github.com/qiskit-community/qiskit-function-templates/tree/main/chemistry/sqd_pcm" target="_blank" rel="noopener noreferrer" class="">GitHub</a></li>
 </ul></div></div>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="references">Rujukan<a href="#references" class="hash-link" aria-label="Pautan terus ke Rujukan" title="Pautan terus ke Rujukan" translate="no">​</a></h4>
