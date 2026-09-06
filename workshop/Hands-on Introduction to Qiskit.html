@@ -15,8 +15,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.e55021e4.css">
-<script src="/assets/js/runtime~main.4cab77a8.js" defer="defer"></script>
-<script src="/assets/js/main.396bde4e.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.4f7afcf8.js" defer="defer"></script>
+<script src="/assets/js/main.061e455a.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="swg" href="https://swg.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://bad.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="bar" href="https://bar.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="ksh" href="https://ksh.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="nds" href="https://nds.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="gsw" href="https://gsw.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://sax.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://bln.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="de-AT" href="https://aut.doqumentation.org/workshop/Hands-on Introduction to Qiskit" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/workshop/Hands-on Introduction to Qiskit" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -36,12 +36,24 @@
 <p>Untuk melaksanakan quantum circuits kamu pada perkakasan, kamu perlu menyediakan akaun kamu dahulu.
 Kamu boleh lakukan seperti berikut:</p>
 <ol>
-<li class="">Pergi ke <a href="https://quantum.cloud.ibm.com/" target="_blank" rel="noopener noreferrer" class="">IBM Quantum® Platform yang dinaik taraf</a>.</li>
-<li class="">Pergi ke sudut kanan atas (seperti yang ditunjukkan dalam gambar di atas), cipta token API kamu, dan salinnya ke lokasi yang selamat.</li>
-<li class="">Dalam sel seterusnya, gantikan <code>deleteThisAndPasteYourAPIKeyHere</code> dengan kunci API kamu.</li>
-<li class="">Pergi ke sudut kiri bawah (seperti yang ditunjukkan dalam gambar di atas) dan <strong>cipta instance kamu</strong>. Pastikan kamu memilih pelan terbuka.</li>
-<li class="">Selepas instance dicipta, salin kod CRN yang berkaitan. Kamu mungkin perlu muat semula untuk melihat instance tersebut.</li>
-<li class="">Dalam sel di bawah, gantikan <code>deleteThisAndPasteYourCRNHere</code> dengan kod CRN kamu.</li>
+<li class="">
+<p>Pergi ke <a href="https://quantum.cloud.ibm.com/" target="_blank" rel="noopener noreferrer" class="">IBM Quantum® Platform yang dinaik taraf</a>.</p>
+</li>
+<li class="">
+<p>Pergi ke sudut kanan atas (seperti yang ditunjukkan dalam gambar di atas), cipta token API kamu, dan salinnya ke lokasi yang selamat.</p>
+</li>
+<li class="">
+<p>Dalam sel seterusnya, gantikan <code>deleteThisAndPasteYourAPIKeyHere</code> dengan kunci API kamu.</p>
+</li>
+<li class="">
+<p>Pergi ke sudut kiri bawah (seperti yang ditunjukkan dalam gambar di atas) dan <strong>cipta instance kamu</strong>. Pastikan kamu memilih pelan terbuka.</p>
+</li>
+<li class="">
+<p>Selepas instance dicipta, salin kod CRN yang berkaitan. Kamu mungkin perlu muat semula untuk melihat instance tersebut.</p>
+</li>
+<li class="">
+<p>Dalam sel di bawah, gantikan <code>deleteThisAndPasteYourCRNHere</code> dengan kod CRN kamu.</p>
+</li>
 </ol>
 <p>Lihat <a href="https://quantum.cloud.ibm.com/docs/guides/cloud-setup" target="_blank" rel="noopener noreferrer" class="">panduan ini</a> untuk maklumat lanjut tentang cara menyediakan akaun IBM Cloud® kamu.</p>
 <div class="alert alert-block alert-warning"><p>⚠️ <strong>Nota:</strong> Layani kunci API kamu seperti kata laluan yang selamat. Lihat panduan <a href="https://quantum.cloud.ibm.com/docs/guides/cloud-setup#cloud-save" target="_blank" rel="noopener noreferrer" class="">Persediaan Cloud</a> untuk maklumat lanjut tentang penggunaan kunci API kamu dalam persekitaran selamat dan tidak dipercayai.</p></div>
@@ -399,11 +411,21 @@ c-16-25.333-24-45-24-59z"></path></svg></span></span></span></span></span></span
 </ul>
 <p>Dan macam mana ia berfungsi? Aliran kerjanya adalah seperti berikut:</p>
 <ol>
-<li class=""><strong>Sediakan keadaan Alice <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>ψ</mi><mo stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">|\psi\rangle</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.03588em">ψ</span><span class="mclose">⟩</span></span></span></span> pada <code>q</code>.</strong> Kita akan cipta satu keadaan khusus seperti <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mo>+</mo><mo stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">|+\rangle</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord">∣</span><span class="mord">+</span><span class="mclose">⟩</span></span></span></span> untuk pengesahan.</li>
-<li class=""><strong>Cipta keberangkutan:</strong> Jana pasangan Bell antara <code>a</code> dan <code>b</code>.</li>
-<li class=""><strong>Operasi Alice:</strong> Alice melakukan &quot;pengukuran Bell&quot; pada dua qubit miliknya (<code>q</code> dan <code>a</code>) dan menyimpan keputusan klasik dalam <code>c0</code> dan <code>c1</code>.</li>
-<li class=""><strong>Komunikasi klasik:</strong> Alice menghantar dua bit klasiknya (<code>c0</code>, <code>c1</code>) kepada Bob.</li>
-<li class=""><strong>Pembetulan Bob:</strong> Bob mengaplikasi gate kuantum tertentu (X dan/atau Z) pada qubit miliknya (<code>b</code>), bergantung pada nilai <code>c0</code> dan <code>c1</code> yang diterimanya.</li>
+<li class="">
+<p><strong>Sediakan keadaan Alice <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>ψ</mi><mo stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">|\psi\rangle</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.03588em">ψ</span><span class="mclose">⟩</span></span></span></span> pada <code>q</code>.</strong> Kita akan cipta satu keadaan khusus seperti <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mo>+</mo><mo stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">|+\rangle</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord">∣</span><span class="mord">+</span><span class="mclose">⟩</span></span></span></span> untuk pengesahan.</p>
+</li>
+<li class="">
+<p><strong>Cipta keberangkutan:</strong> Jana pasangan Bell antara <code>a</code> dan <code>b</code>.</p>
+</li>
+<li class="">
+<p><strong>Operasi Alice:</strong> Alice melakukan &quot;pengukuran Bell&quot; pada dua qubit miliknya (<code>q</code> dan <code>a</code>) dan menyimpan keputusan klasik dalam <code>c0</code> dan <code>c1</code>.</p>
+</li>
+<li class="">
+<p><strong>Komunikasi klasik:</strong> Alice menghantar dua bit klasiknya (<code>c0</code>, <code>c1</code>) kepada Bob.</p>
+</li>
+<li class="">
+<p><strong>Pembetulan Bob:</strong> Bob mengaplikasi gate kuantum tertentu (X dan/atau Z) pada qubit miliknya (<code>b</code>), bergantung pada nilai <code>c0</code> dan <code>c1</code> yang diterimanya.</p>
+</li>
 </ol>
 <p>Kalau semua langkah dilakukan dengan betul, qubit Bob <code>b</code> akan berakhir dalam keadaan <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>ψ</mi><mo stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">|\psi\rangle</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.03588em">ψ</span><span class="mclose">⟩</span></span></span></span>, iaitu keadaan asal qubit Alice <code>q</code>!</p>
 <p>Untuk penjelasan dan penerokaan yang lebih mendalam tentang teleportasi kuantum, termasuk penerangan matematik tentang kenapa protokol ini berfungsi, kamu boleh rujuk sumber IBM Quantum Learning: <a href="https://quantum.cloud.ibm.com/learning/courses/basics-of-quantum-information/entanglement-in-action/quantum-teleportation" target="_blank" rel="noopener noreferrer" class="">Teleportasi Kuantum</a>. Ini merupakan sebahagian daripada kursus <a href="https://quantum.cloud.ibm.com/learning/courses/basics-of-quantum-information" target="_blank" rel="noopener noreferrer" class="">Asas Maklumat Kuantum</a>.</p>

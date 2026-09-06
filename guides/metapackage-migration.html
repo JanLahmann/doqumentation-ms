@@ -15,8 +15,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.e55021e4.css">
-<script src="/assets/js/runtime~main.4cab77a8.js" defer="defer"></script>
-<script src="/assets/js/main.396bde4e.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.4f7afcf8.js" defer="defer"></script>
+<script src="/assets/js/main.061e455a.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/guides/metapackage-migration" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/guides/metapackage-migration" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/guides/metapackage-migration" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/guides/metapackage-migration" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/guides/metapackage-migration" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/guides/metapackage-migration" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/guides/metapackage-migration" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/guides/metapackage-migration" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/guides/metapackage-migration" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/guides/metapackage-migration" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/guides/metapackage-migration" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/guides/metapackage-migration" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/guides/metapackage-migration" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/guides/metapackage-migration" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/guides/metapackage-migration" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/guides/metapackage-migration" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/guides/metapackage-migration" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/guides/metapackage-migration" /><link data-rh-hreflang rel="alternate" hreflang="swg" href="https://swg.doqumentation.org/guides/metapackage-migration" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://bad.doqumentation.org/guides/metapackage-migration" /><link data-rh-hreflang rel="alternate" hreflang="bar" href="https://bar.doqumentation.org/guides/metapackage-migration" /><link data-rh-hreflang rel="alternate" hreflang="ksh" href="https://ksh.doqumentation.org/guides/metapackage-migration" /><link data-rh-hreflang rel="alternate" hreflang="nds" href="https://nds.doqumentation.org/guides/metapackage-migration" /><link data-rh-hreflang rel="alternate" hreflang="gsw" href="https://gsw.doqumentation.org/guides/metapackage-migration" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://sax.doqumentation.org/guides/metapackage-migration" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://bln.doqumentation.org/guides/metapackage-migration" /><link data-rh-hreflang rel="alternate" hreflang="de-AT" href="https://aut.doqumentation.org/guides/metapackage-migration" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/guides/metapackage-migration" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -58,13 +58,13 @@ Pengedaran boleh mengandungi sifar atau lebih modul atau pakej.</p>
 Secara umum, jika anda <code>import</code> ia, sumber bermaksud &quot;pakej&quot;, dan jika anda <code>pip install</code> ia, sumber bermaksud &quot;pengedaran&quot;.</p>
 </li>
 <li class="">
-<p><strong>laluan carian</strong>: Apabila cuba <code>import something</code>, Python mencari senarai tempat yang telah ditetapkan untuk modul atau pakej yang dipanggil <code>something</code>.
+<p><strong>laluan carian</strong>: Apabila cuba <code>import something</code>, Python mencari senarai tempat yang telah ditentukan untuk modul atau pakej yang dipanggil <code>something</code>.
 Senarai tempat itu ialah <em>laluan carian</em>.
-Anda boleh melihat dan mengubah suai laluan carian dalam <code>sys.path</code>.</p>
+Kamu boleh melihat dan mengubah suai laluan carian dalam <code>sys.path</code>.</p>
 </li>
 <li class="">
-<p><strong>keperluan</strong>: Pengedaran mengandungi maklumat tentang pengedaran lain yang bergantung padanya semasa dipasang.
-Mana-mana pengedaran lain yang diperlukan adalah <em>keperluan</em>, dan pengurus pakej (biasanya <code>pip</code> atau <code>conda</code>) harus memastikan bahawa semua keperluan dipasang dengan versi yang serasi.</p>
+<p><strong>keperluan</strong>: Satu edaran mengandungi maklumat tentang edaran lain yang ia bergantung apabila dipasang.
+Sebarang edaran lain yang diperlukan adalah <em>keperluan</em>, dan pengurus pakej (biasanya <code>pip</code> atau <code>conda</code>) perlu memastikan semua keperluan dipasang dengan versi yang serasi.</p>
 </li>
 </ul></div></details></div>
 <p>Python sangat dinamik, dan banyak kerumitan boleh timbul; contohnya, mungkin <strong>modul</strong> atau <strong>pakej</strong> tidak sepadan dengan fail pada cakera, atau ia adalah sambungan terkompil.</p>
@@ -81,9 +81,15 @@ Sehingga Qiskit v1.0, pakej <code>qiskit</code> adalah pakej ruang nama dan meng
 Mereka oleh itu akan menentukan keperluan mereka dengan betul sebagai <code>qiskit-terra</code>.
 Walau bagaimanapun, apabila orang cuba menyahpasang Qiskit dengan menjalankan <code>pip uninstall qiskit</code>, <code>pip</code> menghadapi masalah:</p>
 <ul>
-<li class=""><code>pip</code> tidak membuang pengedaran yang kini tidak digunakan. Jadi <code>pip uninstall qiskit</code> hampir tidak melakukan apa-apa; tiada kod dalam pengedaran, jadi tiada kod yang dibuang.</li>
-<li class="">Walaupun jika ia membuang kod, banyak pengedaran downstream akan kekal dipasang kerana ia bergantung pada <code>qiskit-terra</code>.</li>
-<li class="">Walaupun jika <code>qiskit-terra</code> dinyahpasang, ia mungkin masih meninggalkan direktori <code>qiskit</code> yang boleh diimport tanpa kod yang berguna, kerana ia adalah pakej ruang nama.</li>
+<li class="">
+<p><code>pip</code> tidak membuang pengedaran yang kini tidak digunakan. Jadi <code>pip uninstall qiskit</code> hampir tidak melakukan apa-apa; tiada kod dalam pengedaran, jadi tiada kod yang dibuang.</p>
+</li>
+<li class="">
+<p>Walaupun jika ia membuang kod, banyak pengedaran downstream akan kekal dipasang kerana ia bergantung pada <code>qiskit-terra</code>.</p>
+</li>
+<li class="">
+<p>Walaupun jika <code>qiskit-terra</code> dinyahpasang, ia mungkin masih meninggalkan direktori <code>qiskit</code> yang boleh diimport tanpa kod yang berguna, kerana ia adalah pakej ruang nama.</p>
+</li>
 </ul>
 <p>Apabila memasang atau menaik taraf pengedaran dengan arahan <code>pip install</code>, <code>pip</code> juga tidak mengambil kira resolusi keperluan sebelumnya.
 Kerana terdapat dua pakej, menaik taraf pakej yang memerlukan <code>qiskit-terra</code> untuk dinaik taraf menyebabkan persekitaran yang tidak sah; <code>pip</code> menaik taraf <code>qiskit-terra</code> tetapi membiarkan <code>qiskit</code> tidak berubah.

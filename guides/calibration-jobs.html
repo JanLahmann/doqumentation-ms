@@ -15,8 +15,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.e55021e4.css">
-<script src="/assets/js/runtime~main.4cab77a8.js" defer="defer"></script>
-<script src="/assets/js/main.396bde4e.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.4f7afcf8.js" defer="defer"></script>
+<script src="/assets/js/main.061e455a.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="swg" href="https://swg.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://bad.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="bar" href="https://bar.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="ksh" href="https://ksh.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="nds" href="https://nds.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="gsw" href="https://gsw.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://sax.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://bln.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="de-AT" href="https://aut.doqumentation.org/guides/calibration-jobs" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/guides/calibration-jobs" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -28,51 +28,81 @@
 <p>Untuk memastikan prestasi yang konsisten, komputer kuantum IBM® dipantau dengan kerap bagi menjejaki parameter yang mungkin menyimpang dari masa ke masa, menjalankan penentukuran apabila diperlukan, dan melaksanakan penanda aras harian. Halaman ini memperincikan tiga proses — pemantauan, penentukuran, dan penanda aras — yang bekerjasama untuk memastikan armada komputer kuantum IBM kekal stabil, boleh diramal, dan tersedia kepada pengguna sebanyak mungkin.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="monitoring">Pemantauan<a href="#monitoring" class="hash-link" aria-label="Pautan terus ke Pemantauan" title="Pautan terus ke Pemantauan" translate="no">​</a></h2>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-monitoring">Pemantauan parameter<a href="#parameter-monitoring" class="hash-link" aria-label="Pautan terus ke Pemantauan parameter" title="Pautan terus ke Pemantauan parameter" translate="no">​</a></h3>
-<p>Kerja pemantauan parameter ringkas dilaksanakan kira-kira sekali sejam, diselangi secara automatik antara kerja pengguna, menggunakan tindanan perisian Qiskit Runtime yang penuh. Keputusan kerja-kerja ini dianalisis untuk menyemak sama ada mana-mana parameter telah mula menyimpang daripada julat yang boleh diterima, dengan idealnya mengesan isu sebelum ia menjadi cukup ketara untuk menjejaskan prestasi ke tahap yang ketara.</p>
+<p>Kerja pemantauan parameter ringkas dilaksanakan kira-kira sekali sejam, diselangi secara automatik antara kerja pengguna, menggunakan tindanan perisian IBM Quantum Compute Service yang penuh. Keputusan kerja-kerja ini dianalisis untuk menyemak sama ada mana-mana parameter telah mula menyimpang daripada julat yang boleh diterima, dengan idealnya mengesan isu sebelum ia menjadi cukup ketara untuk menjejaskan prestasi ke tahap yang ketara.</p>
 <p>Beberapa parameter yang dipantau termasuk yang berikut:</p>
 <ul>
-<li class="">Sudut pembacaan, amplitud, dan ambang diskriminator, memastikan pembezaan keadaan yang tepat, kebocoran rendah dan operasi yang stabil. Ini termasuk parameter operasi amplifier kuantum terhad kami.</li>
-<li class="">Operasi gate qubit tunggal dan dua qubit, mengesahkan ia berkelakuan seperti yang dijangka untuk mengekalkan sudut putaran yang betul dan meminimumkan ralat fasa dan amplitud.</li>
-<li class="">Tanda-tanda aktiviti TLS.</li>
+<li class="">
+<p>Sudut pembacaan, amplitud, dan ambang diskriminator, memastikan pembezaan keadaan yang tepat, kebocoran rendah dan operasi yang stabil. Ini termasuk parameter operasi amplifier kuantum terhad kami.</p>
+</li>
+<li class="">
+<p>Operasi gate qubit tunggal dan dua qubit, mengesahkan ia berkelakuan seperti yang dijangka untuk mengekalkan sudut putaran yang betul dan meminimumkan ralat fasa dan amplitud.</p>
+</li>
+<li class="">
+<p>Tanda-tanda aktiviti TLS.</p>
+</li>
 </ul>
 <p>Jika keputusan kerja pemantauan ini menunjukkan penyelewengan kecil daripada prestasi yang dijangka, maka kerja penentukuran yang sesuai akan dilancarkan. Jika aktiviti TLS yang teruk dikesan, maka strategi penentukuran untuk gate yang berkaitan dengan qubit yang terjejas mungkin diubah secara automatik (dan boleh termasuk menghentikan penentukuran sementara) sehingga aktiviti TLS tersebut berkurangan kembali ke tahap yang boleh diterima.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="holistic-monitoring">Pemantauan holistik<a href="#holistic-monitoring" class="hash-link" aria-label="Pautan terus ke Pemantauan holistik" title="Pautan terus ke Pemantauan holistik" translate="no">​</a></h3>
-<p>Selain kerja yang memantau parameter individu, terdapat kerja yang memantau prestasi komputer kuantum secara lebih menyeluruh, seperti ujian yang melihat kesetiaan keadaan Bell yang dijana, serta ujian gate pecahan dan litar dinamik pada komputer kuantum yang menyokong ciri-ciri tersebut. Matlamat ujian-ujian ini, yang juga berjalan melalui tindanan Qiskit Runtime penuh diselangi dengan kerja pengguna, adalah untuk mengesahkan tingkah laku keseluruhan perkakasan dan perisian secara cekap. Jika ujian-ujian ini mengesan penurunan prestasi yang ketara, komputer kuantum akan secara automatik menghentikan baris gilir kerja sehingga isu diselesaikan, memastikan kerja pengguna tidak akan berjalan sehingga peranti berfungsi seperti yang dijangka semula.</p>
+<p>Selain kerja yang memantau parameter individu, terdapat kerja yang memantau prestasi komputer kuantum secara lebih menyeluruh, seperti ujian yang melihat kesetiaan keadaan Bell yang dijana, serta ujian gate pecahan dan litar dinamik pada komputer kuantum yang menyokong ciri-ciri tersebut. Matlamat ujian-ujian ini, yang juga berjalan melalui tindanan Quantum Compute penuh diselangi dengan kerja pengguna, adalah untuk mengesahkan tingkah laku keseluruhan perkakasan dan perisian secara cekap. Jika ujian-ujian ini mengesan penurunan prestasi yang ketara, komputer kuantum akan secara automatik menghentikan baris gilir kerja sehingga isu diselesaikan, memastikan kerja pengguna tidak akan berjalan sehingga peranti berfungsi seperti yang dijangka semula.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="calibrating">Penentukuran<a href="#calibrating" class="hash-link" aria-label="Pautan terus ke Penentukuran" title="Pautan terus ke Penentukuran" translate="no">​</a></h2>
 <p>Penentukuran dicetuskan apabila kerja pemantauan menunjukkan bahawa parameter seperti amplitud atau sudut nadi telah menyimpang daripada nilai idealnya. Ia berjalan sepanjang hari di antara kerja pengguna, dan oleh itu tiada tempoh masa tetap di mana penentukuran bermula dan berakhir. Ini hanya dijalankan pada qubit/gate di mana pemantauan parameter telah mengenal pasti isu tertentu, bersama mana-mana qubit yang perlu dijalankan pada masa yang sama mengikut peraturan pengelompokan tertentu. Pada QPU Heron, jumlah masa yang digunakan untuk penentukuran biasanya kurang daripada dua jam sehari.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="single-qubit-operations">Operasi qubit tunggal<a href="#single-qubit-operations" class="hash-link" aria-label="Pautan terus ke Operasi qubit tunggal" title="Pautan terus ke Operasi qubit tunggal" translate="no">​</a></h3>
 <p>Penentukuran ini memastikan pelaksanaan tepat gate qubit tunggal: sx, x, rx (pecahan). Kami melaraskan:</p>
 <ul>
-<li class="">Frekuensi qubit</li>
-<li class="">Amplitud dan fasa nadi</li>
+<li class="">
+<p>Frekuensi qubit</p>
+</li>
+<li class="">
+<p>Amplitud dan fasa nadi</p>
+</li>
 </ul>
 <p>Penentukuran ini dikelompokkan merentasi qubit yang terjejas dan dilaksanakan secara serentak di mana sesuai, dengan strategi pengelompokan yang disesuaikan dengan setiap jenis penentukuran.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="two-qubit-operations">Operasi dua qubit<a href="#two-qubit-operations" class="hash-link" aria-label="Pautan terus ke Operasi dua qubit" title="Pautan terus ke Operasi dua qubit" translate="no">​</a></h3>
 <ul>
-<li class="">Amplitud dan fasa gate CZ dan RZZ (untuk pemproses Heron dan Nighthawk)</li>
-<li class="">Amplitud dan fasa gate ECR (untuk pemproses Eagle)</li>
+<li class="">
+<p>Amplitud dan fasa gate CZ dan RZZ (untuk pemproses Heron dan Nighthawk)</p>
+</li>
+<li class="">
+<p>Amplitud dan fasa gate ECR (untuk pemproses Eagle)</p>
+</li>
 </ul>
 <p>Penentukuran ini dijalankan dalam kelompok qubit yang bukan jiran terdekat untuk meminimumkan crosstalk.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="readout">Pembacaan<a href="#readout" class="hash-link" aria-label="Pautan terus ke Pembacaan" title="Pautan terus ke Pembacaan" translate="no">​</a></h3>
 <ul>
-<li class="">Sudut nadi pembacaan</li>
-<li class="">Parameter diskriminasi pengukuran</li>
+<li class="">
+<p>Sudut nadi pembacaan</p>
+</li>
+<li class="">
+<p>Parameter diskriminasi pengukuran</p>
+</li>
 </ul>
 <p>Penentukuran ini dijalankan serentak pada qubit yang memerlukan penentukuran.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-calibrations-are-scheduled">Cara penentukuran dijadualkan<a href="#how-calibrations-are-scheduled" class="hash-link" aria-label="Pautan terus ke Cara penentukuran dijadualkan" title="Pautan terus ke Cara penentukuran dijadualkan" translate="no">​</a></h3>
 <ul>
-<li class="">Kerja penentukuran tidak boleh berjalan serentak semasa kerja atau sesi sedang berjalan.</li>
-<li class="">Oleh itu, semasa sesi yang panjang, komputer kuantum mungkin mengalami kestabilan efektif yang berkurangan disebabkan oleh penentukuran semula yang tertangguh atau jarang.</li>
-<li class="">Dua kerja yang dihantar pada masa yang sama mungkin berjalan di bawah set penentukuran yang berbeza, bergantung pada pemasaan.</li>
+<li class="">
+<p>Kerja penentukuran tidak boleh berjalan serentak semasa kerja atau sesi sedang berjalan.</p>
+</li>
+<li class="">
+<p>Oleh itu, semasa sesi yang panjang, komputer kuantum mungkin mengalami kestabilan efektif yang berkurangan disebabkan oleh penentukuran semula yang tertangguh atau jarang.</p>
+</li>
+<li class="">
+<p>Dua kerja yang dihantar pada masa yang sama mungkin berjalan di bawah set penentukuran yang berbeza, bergantung pada pemasaan.</p>
+</li>
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="benchmarking">Penanda aras<a href="#benchmarking" class="hash-link" aria-label="Pautan terus ke Penanda aras" title="Pautan terus ke Penanda aras" translate="no">​</a></h2>
 <p>Penanda aras harian memberikan pandangan komprehensif tentang prestasi komputer kuantum dan menjana metrik yang dihantar kepada pengguna melalui Qiskit. Ia membantu pengguna memilih qubit, mengoptimumkan penyusunan, dan menjangka prestasi Circuit yang dijangka dengan lebih baik. Anda boleh melihat nombor yang dilaporkan sama ada secara aturcara atau di halaman <a href="https://quantum.cloud.ibm.com/computers" target="_blank" rel="noopener noreferrer" class="">Sumber pengiraan</a> (klik mana-mana QPU untuk membuka kad maklumat terperinci). Cari butiran lanjut tentang setiap metrik dalam <a class="" href="/guides/qpu-information">dokumentasi</a>.</p>
 <div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Hanyutan peranti</div><div class="admonitionContent_BuS1"><p>Impak hanyutan peranti (prestasi perkakasan yang merosot dari masa ke masa) bergantung pada banyak faktor, seperti masa penentukuran terakhir dijalankan, eksperimen tertentu yang dilakukan, sebarang aktiviti TLS, dan sebagainya. Jika beban kerja tertentu sangat sensitif terhadap nilai ralat parameter peranti, anda boleh melaksanakan penanda aras parameter peranti masa nyata dengan mengikuti <a class="" href="/tutorials/real-time-benchmarking-for-qubit-selection">tutorial ini</a> dalam IBM Quantum Learning.</p></div></div>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="single-qubit-performance">Prestasi qubit tunggal<a href="#single-qubit-performance" class="hash-link" aria-label="Pautan terus ke Prestasi qubit tunggal" title="Pautan terus ke Prestasi qubit tunggal" translate="no">​</a></h3>
 <ul>
-<li class=""><a class="" href="/guides/qpu-information#median-sx-error">Penanda aras rawak</a> (RB) dalam kumpulan berkelompok</li>
-<li class="">Masa koheren untuk <a class="" href="/guides/qpu-information#t1"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">T_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span></span></span></span></a> dan <a class="" href="/guides/qpu-information#t2"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">T_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span></span></span></span></a></li>
-<li class=""><a class="" href="/guides/qpu-information#median-readout-error">Metrik kesetiaan pengukuran</a></li>
+<li class="">
+<p><a class="" href="/guides/qpu-information#median-sx-error">Penanda aras rawak</a> (RB) dalam kumpulan berkelompok</p>
+</li>
+<li class="">
+<p>Masa koheren untuk <a class="" href="/guides/qpu-information#t1"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">T_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span></span></span></span></a> dan <a class="" href="/guides/qpu-information#t2"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">T_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span></span></span></span></a></p>
+</li>
+<li class="">
+<p><a class="" href="/guides/qpu-information#median-readout-error">Metrik kesetiaan pengukuran</a></p>
+</li>
 </ul>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="two-qubit-performance">Prestasi dua qubit<a href="#two-qubit-performance" class="hash-link" aria-label="Pautan terus ke Prestasi dua qubit" title="Pautan terus ke Prestasi dua qubit" translate="no">​</a></h3>
 <ul>

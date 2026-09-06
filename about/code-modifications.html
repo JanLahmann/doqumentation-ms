@@ -15,8 +15,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.e55021e4.css">
-<script src="/assets/js/runtime~main.4cab77a8.js" defer="defer"></script>
-<script src="/assets/js/main.396bde4e.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.4f7afcf8.js" defer="defer"></script>
+<script src="/assets/js/main.061e455a.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="swg" href="https://swg.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://bad.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="bar" href="https://bar.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="ksh" href="https://ksh.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="nds" href="https://nds.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="gsw" href="https://gsw.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://sax.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://bln.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="de-AT" href="https://aut.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/about/code-modifications" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -37,12 +37,16 @@ telah menambah sel persediaan automatik. Ia menghubungkan semula ke halaman ini.
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-prerequisites-cell-code">2. Sel prasyarat (kod)<a href="#2-prerequisites-cell-code" class="hash-link" aria-label="Pautan terus ke 2. Sel prasyarat (kod)" title="Pautan terus ke 2. Sel prasyarat (kod)" translate="no">​</a></h3>
 <p>Sel kod disisipkan selepas notis yang:</p>
 <ul>
-<li class=""><strong>Memasang pakej yang diperlukan</strong> (<code>qiskit</code>, <code>qiskit-aer</code>, <code>qiskit-ibm-runtime</code>,
+<li class="">
+<p><strong>Memasang pakej yang diperlukan</strong> (<code>qiskit</code>, <code>qiskit-aer</code>, <code>qiskit-ibm-runtime</code>,
 <code>pylatexenc</code>, ditambah mana-mana pakej khusus tutorial yang dikesan melalui
 pengimbasan import). Pemasangan <strong>dilangkau</strong> jika pakej sudah ada
-(cth. pada Binder atau Code Engine di mana ia telah dipasang terlebih dahulu).</li>
-<li class=""><strong>Menyediakan templat kelayakan yang dikomentari</strong> untuk IBM Quantum, supaya pengguna
-yang ingin menjalankan pada perkakasan sebenar boleh membuka komen dan mengisi kunci API mereka.</li>
+(cth. pada Binder atau Code Engine di mana ia telah dipasang terlebih dahulu).</p>
+</li>
+<li class="">
+<p><strong>Menyediakan templat kelayakan yang dikomentari</strong> untuk IBM Quantum, supaya pengguna
+yang ingin menjalankan pada perkakasan sebenar boleh membuka komen dan mengisi kunci API mereka.</p>
+</li>
 </ul>
 <p>Pada Google Colab, sel ini dijalankan secara automatik semasa notebook dibuka melalui
 bendera metadata <code>cell_execution_strategy: setup</code>.</p>
@@ -53,26 +57,42 @@ supaya berfungsi dengan betul dalam persekitaran notebook berdiri sendiri.</p>
 <p>Tutorial yang dipaparkan di laman web ini ditukar dari notebook <code>.ipynb</code> atau fail <code>.mdx</code> dari sumber asal.
 Transformasi berikut digunakan:</p>
 <ul>
-<li class=""><strong>Baris <code>pip install</code></strong> ditambah pada blok kod Python yang mengimport
-pakej pihak ketiga, membolehkan pelaksanaan satu klik melalui thebelab.</li>
-<li class=""><strong>Bahagian Tinjauan Tutorial IBM</strong>: Nota ditambahkan yang menjelaskan bahawa tinjauan
+<li class="">
+<p><strong>Baris <code>pip install</code></strong> ditambah pada blok kod Python yang mengimport
+pakej pihak ketiga, membolehkan pelaksanaan satu klik melalui thebelab.</p>
+</li>
+<li class="">
+<p><strong>Bahagian Tinjauan Tutorial IBM</strong>: Nota ditambahkan yang menjelaskan bahawa tinjauan
 tersebut adalah milik IBM Quantum dan menghubungkan ke GitHub Issues doQumentation untuk
-maklum balas khusus laman web.</li>
-<li class=""><strong>Widget maklum balas</strong>: Widget &quot;Adakah ini membantu?&quot; ditambahkan di bahagian bawah
-setiap tutorial, dijejak melalui analitik Umami yang mesra privasi.</li>
-<li class=""><strong>Pembetulan sintaks MDX</strong>: Pendakap kerinting, hierarki tajuk, dan isu keserasian JSX
-diperbetulkan secara automatik untuk rendering Docusaurus.</li>
-<li class=""><strong>OpenInLabBanner</strong>: Banner interaktif disisipkan di bawah tajuk dengan
-butang untuk membuka notebook dalam Colab, Binder, atau Code Engine.</li>
+maklum balas khusus laman web.</p>
+</li>
+<li class="">
+<p><strong>Widget maklum balas</strong>: Widget &quot;Adakah ini membantu?&quot; ditambahkan di bahagian bawah
+setiap tutorial, dijejak melalui analitik Umami yang mesra privasi.</p>
+</li>
+<li class="">
+<p><strong>Pembetulan sintaks MDX</strong>: Pendakap kerinting, hierarki tajuk, dan isu keserasian JSX
+diperbetulkan secara automatik untuk rendering Docusaurus.</p>
+</li>
+<li class="">
+<p><strong>OpenInLabBanner</strong>: Banner interaktif disisipkan di bawah tajuk dengan
+butang untuk membuka notebook dalam Colab, Binder, atau Code Engine.</p>
+</li>
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-is-not-modified">Apa yang TIDAK diubah<a href="#what-is-not-modified" class="hash-link" aria-label="Pautan terus ke Apa yang TIDAK diubah" title="Pautan terus ke Apa yang TIDAK diubah" translate="no">​</a></h2>
 <ul>
-<li class=""><strong>Kandungan tutorial itu sendiri</strong> (penjelasan, logik kod, output) tidak pernah
-diubah.</li>
-<li class=""><strong>Atribusi pengarang asal</strong> dikekalkan melalui frontmatter dan fail NOTICE
-(lesen Apache 2.0 / CC BY-SA 4.0).</li>
-<li class=""><strong>Tiada kod telemetri atau penjejakan</strong> disisipkan ke dalam notebook. Analitik
-(Umami) hanya berjalan di laman web doQumentation, bukan dalam notebook yang dieksport.</li>
+<li class="">
+<p><strong>Kandungan tutorial itu sendiri</strong> (penjelasan, logik kod, output) tidak pernah
+diubah.</p>
+</li>
+<li class="">
+<p><strong>Atribusi pengarang asal</strong> dikekalkan melalui frontmatter dan fail NOTICE
+(lesen Apache 2.0 / CC BY-SA 4.0).</p>
+</li>
+<li class="">
+<p><strong>Tiada kod telemetri atau penjejakan</strong> disisipkan ke dalam notebook. Analitik
+(Umami) hanya berjalan di laman web doQumentation, bukan dalam notebook yang dieksport.</p>
+</li>
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="source-code">Kod sumber<a href="#source-code" class="hash-link" aria-label="Pautan terus ke Kod sumber" title="Pautan terus ke Kod sumber" translate="no">​</a></h2>
 <p>Semua transformasi dilaksanakan dalam

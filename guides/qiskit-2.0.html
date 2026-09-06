@@ -15,8 +15,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.e55021e4.css">
-<script src="/assets/js/runtime~main.4cab77a8.js" defer="defer"></script>
-<script src="/assets/js/main.396bde4e.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.4f7afcf8.js" defer="defer"></script>
+<script src="/assets/js/main.061e455a.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="swg" href="https://swg.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://bad.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="bar" href="https://bar.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="ksh" href="https://ksh.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="nds" href="https://nds.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="gsw" href="https://gsw.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://sax.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://bln.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="de-AT" href="https://aut.doqumentation.org/guides/qiskit-2.0" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/guides/qiskit-2.0" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -128,15 +128,33 @@ kepada Transpiler, dan modul <code>qiskit.pulse</code> penuh telah dibuang.</p>
 <p>Modul <code>qiskit.pulse</code> telah dibuang sepenuhnya dari Qiskit, tanpa penggantian.
 Ini termasuk item berkaitan:</p>
 <ul>
-<li class="">sifat <code>calibrations</code> pada <a href="https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.QuantumCircuit" target="_blank" rel="noopener noreferrer" class=""><code>QuantumCircuit</code></a>, <a href="https://docs.quantum.ibm.com/api/qiskit/qiskit.dagcircuit.DAGCircuit" target="_blank" rel="noopener noreferrer" class=""><code>DAGCircuit</code></a> dan <a href="https://docs.quantum.ibm.com/api/qiskit/qiskit.dagcircuit.DAGDependency" target="_blank" rel="noopener noreferrer" class=""><code>DAGDependency</code></a>.</li>
-<li class="">kaedah <code>has_calibration_for</code> dan <code>add_calibration</code> pada <a href="https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.QuantumCircuit" target="_blank" rel="noopener noreferrer" class=""><code>QuantumCircuit</code></a>.</li>
-<li class="">kaedah <code>has_calibration_for</code> pada <a href="https://docs.quantum.ibm.com/api/qiskit/qiskit.dagcircuit.DAGCircuit" target="_blank" rel="noopener noreferrer" class=""><code>DAGCircuit</code></a>.</li>
-<li class="">laluan Transpiler <code>PulseGates</code>, <code>RXCalibrationBuilder</code>, <code>RZXCalibrationBuilder</code>, <code>EchoRZXWeylDecomposition</code>, <code>ValidatePulseGates</code>.</li>
-<li class="">modul <code>qiskit.scheduler</code> dan semua kandungannya.</li>
-<li class="">kaedah <code>instruction_schedule_map</code>, <code>drive_channel</code>, <code>measure_channel</code>, <code>acquire_channel</code> dan <code>control_channel</code> pada <a href="https://docs.quantum.ibm.com/api/qiskit/qiskit.providers.BackendV2" target="_blank" rel="noopener noreferrer" class=""><code>BackendV2</code></a>.</li>
-<li class="">kaedah <code>has_calibration</code>, <code>get_calibration</code>, <code>instruction_schedule_map</code> dan <code>update_from_instruction_schedule_map</code> pada <a href="https://docs.quantum.ibm.com/api/qiskit/qiskit.transpiler.Target" target="_blank" rel="noopener noreferrer" class=""><code>Target</code></a>.</li>
-<li class="">argumen <code>inst_map</code> pada <a href="https://docs.quantum.ibm.com/api/qiskit/qiskit.transpiler.generate_preset_pass_manager" target="_blank" rel="noopener noreferrer" class=""><code>generate_preset_pass_manager</code></a>, <a href="https://docs.quantum.ibm.com/api/qiskit/compiler#transpile" target="_blank" rel="noopener noreferrer" class=""><code>transpile</code></a>, dan <a href="https://docs.quantum.ibm.com/api/qiskit/qiskit.transpiler.Target#qiskit.transpiler.Target.from_configuration" target="_blank" rel="noopener noreferrer" class=""><code>Target.from_configuration</code></a>.</li>
-<li class="">medan <code>calibration</code> pada <a href="https://docs.quantum.ibm.com/api/qiskit/qiskit.transpiler.InstructionProperties" target="_blank" rel="noopener noreferrer" class=""><code>InstructionProperties</code></a>.</li>
+<li class="">
+<p>sifat <code>calibrations</code> pada <a href="https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.QuantumCircuit" target="_blank" rel="noopener noreferrer" class=""><code>QuantumCircuit</code></a>, <a href="https://docs.quantum.ibm.com/api/qiskit/qiskit.dagcircuit.DAGCircuit" target="_blank" rel="noopener noreferrer" class=""><code>DAGCircuit</code></a> dan <a href="https://docs.quantum.ibm.com/api/qiskit/qiskit.dagcircuit.DAGDependency" target="_blank" rel="noopener noreferrer" class=""><code>DAGDependency</code></a>.</p>
+</li>
+<li class="">
+<p>kaedah <code>has_calibration_for</code> dan <code>add_calibration</code> pada <a href="https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.QuantumCircuit" target="_blank" rel="noopener noreferrer" class=""><code>QuantumCircuit</code></a>.</p>
+</li>
+<li class="">
+<p>kaedah <code>has_calibration_for</code> pada <a href="https://docs.quantum.ibm.com/api/qiskit/qiskit.dagcircuit.DAGCircuit" target="_blank" rel="noopener noreferrer" class=""><code>DAGCircuit</code></a>.</p>
+</li>
+<li class="">
+<p>laluan Transpiler <code>PulseGates</code>, <code>RXCalibrationBuilder</code>, <code>RZXCalibrationBuilder</code>, <code>EchoRZXWeylDecomposition</code>, <code>ValidatePulseGates</code>.</p>
+</li>
+<li class="">
+<p>modul <code>qiskit.scheduler</code> dan semua kandungannya.</p>
+</li>
+<li class="">
+<p>kaedah <code>instruction_schedule_map</code>, <code>drive_channel</code>, <code>measure_channel</code>, <code>acquire_channel</code> dan <code>control_channel</code> pada <a href="https://docs.quantum.ibm.com/api/qiskit/qiskit.providers.BackendV2" target="_blank" rel="noopener noreferrer" class=""><code>BackendV2</code></a>.</p>
+</li>
+<li class="">
+<p>kaedah <code>has_calibration</code>, <code>get_calibration</code>, <code>instruction_schedule_map</code> dan <code>update_from_instruction_schedule_map</code> pada <a href="https://docs.quantum.ibm.com/api/qiskit/qiskit.transpiler.Target" target="_blank" rel="noopener noreferrer" class=""><code>Target</code></a>.</p>
+</li>
+<li class="">
+<p>argumen <code>inst_map</code> pada <a href="https://docs.quantum.ibm.com/api/qiskit/qiskit.transpiler.generate_preset_pass_manager" target="_blank" rel="noopener noreferrer" class=""><code>generate_preset_pass_manager</code></a>, <a href="https://docs.quantum.ibm.com/api/qiskit/compiler#transpile" target="_blank" rel="noopener noreferrer" class=""><code>transpile</code></a>, dan <a href="https://docs.quantum.ibm.com/api/qiskit/qiskit.transpiler.Target#qiskit.transpiler.Target.from_configuration" target="_blank" rel="noopener noreferrer" class=""><code>Target.from_configuration</code></a>.</p>
+</li>
+<li class="">
+<p>medan <code>calibration</code> pada <a href="https://docs.quantum.ibm.com/api/qiskit/qiskit.transpiler.InstructionProperties" target="_blank" rel="noopener noreferrer" class=""><code>InstructionProperties</code></a>.</p>
+</li>
 </ul>
 <p>Ini berlaku kerana QPU IBM Quantum® berhenti menawarkan akses peringkat denyutan, dan pasukan Qiskit tidak lagi mempunyai sumber untuk menyelenggara pakej yang jarang digunakan ini.
 Anda boleh terus menggunakan modul <code>qiskit.pulse</code> semasa menggunakan siri v1.x Qiskit, yang mempunyai sokongan pembetulan pepijat sehingga September 2024 dan sokongan keselamatan sehingga Mac 2025, tetapi modul ini dibuang dari siri v2.x.</p>
