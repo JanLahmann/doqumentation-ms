@@ -14,8 +14,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.d115d309.css">
-<script src="/assets/js/runtime~main.2919054e.js" defer="defer"></script>
-<script src="/assets/js/main.774603df.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.fdcf9ff7.js" defer="defer"></script>
+<script src="/assets/js/main.f1ead4d5.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/guides/algorithmiq-tem" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -34,7 +34,7 @@ Kami mengesyorkan menggunakan versi ini atau yang lebih baharu.</p><div class="l
 <p>Kaedah Mitigasi Ralat Rangkaian Tensor (TEM) Algorithmiq adalah algoritma
 kuantum-klasikal hibrid yang direka untuk melakukan mitigasi hingar sepenuhnya
 pada peringkat pasca-pemprosesan klasikal. Dengan TEM, pengguna boleh mengira
-nilai jangkaan observables yang mengurangkan ralat yang disebabkan oleh hingar
+nilai jangkaan observables sambil memitigasi ralat akibat hingar
 yang tidak dapat dielakkan pada perkakasan kuantum dengan ketepatan dan
 kecekapan kos yang ditingkatkan, menjadikannya pilihan yang sangat menarik bagi
 penyelidik kuantum dan pengamal industri.</p>
@@ -60,7 +60,7 @@ badan, dinamik Hubbard, dan simulasi kimia molekul kecil.</p>
 <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.131.210601" target="_blank" rel="noopener noreferrer" class="">had teori</a>,
 bermakna tiada kaedah yang boleh mencapai overhead pengukuran yang lebih kecil.
 Dalam erti kata lain, TEM memerlukan bilangan minimum pengukuran tambahan untuk
-melakukan mitigasi ralat. Ini seterusnya bermakna TEM menggunakan masa runtime
+melakukan mitigasi ralat. Ini seterusnya bermakna TEM menggunakan masa
 kuantum yang minimum.</li>
 <li class=""><strong>Kos efektif</strong>: Memandangkan TEM mengendalikan mitigasi hingar sepenuhnya
 dalam peringkat pasca-pemprosesan, tidak perlu menambah litar tambahan kepada
@@ -72,7 +72,7 @@ menganggarkan pelbagai observables dengan cekap menggunakan data pengukuran
 yang sama daripada komputer kuantum.</li>
 <li class=""><strong>Mitigasi ralat pengukuran</strong>: Fungsi TEM Qiskit juga termasuk
 <a href="https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.5.033154" target="_blank" rel="noopener noreferrer" class="">kaedah mitigasi ralat pengukuran proprietari</a>
-yang mampu mengurangkan ralat bacaan dengan ketara selepas jalankan kalibrasi
+yang mampu mengurangkan ralat bacaan dengan ketara selepas larian kalibrasi
 yang singkat.</li>
 <li class=""><strong>Ketepatan</strong>: TEM meningkatkan ketepatan dan kebolehpercayaan simulasi
 kuantum digital dengan ketara, menjadikan algoritma kuantum lebih tepat dan
@@ -81,7 +81,7 @@ boleh dipercayai.</li>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Keterangan<a href="#description" class="hash-link" aria-label="Pautan terus ke Keterangan" title="Pautan terus ke Keterangan" translate="no">​</a></h2>
 <p>Fungsi TEM membolehkan anda mendapatkan nilai jangkaan yang dikurangkan ralat
 untuk pelbagai observables pada Circuit kuantum dengan overhead persampelan
-yang minimum. Circuit diukur dengan ukuran operator bernilai pengendali positif
+yang minimum. Circuit diukur dengan ukuran bernilai operator positif
 yang lengkap maklumat (IC-POVM), dan hasil pengukuran yang dikumpulkan diproses
 pada komputer klasikal. Pengukuran ini digunakan untuk melakukan kaedah
 rangkaian tensor dan membina peta songsangan hingar. Fungsi ini menggunakan
@@ -119,7 +119,7 @@ ke persekitaran tempatan anda.)</p>
 <p>Anda boleh mengembalikan keputusan seperti:</p>
 <div class="executable-code"><div class="executable-code__code" style="display:block"><div class="language-python codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-python codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv codeBlockLinesWithNumbering_o6Pm" style="counter-reset:line-count 0"><div class="token-line codeLine_lJS_" style="color:#393A34"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">result </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> job</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">result</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span></span><br></div><div class="token-line codeLine_lJS_" style="color:#393A34"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain">evs </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> result</span><span class="token punctuation" style="color:#393A34">[</span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">data</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">evs</span></span><br></div><div class="token-line codeLine_lJS_" style="color:#393A34"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain"></span><span class="token keyword" style="color:#00009f">print</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">evs</span><span class="token punctuation" style="color:#393A34">[</span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">)</span></span><br></div></code></pre></div></div></div></div>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">-0.10628832892063486</span><br></div></code></pre></div></div>
-<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>Nilai jangkaan untuk Circuit tanpa hingar bagi pengendali yang diberikan sepatutnya sekitar <code>0.18409094298943401</code>.</p></div></div>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>Nilai jangkaan untuk Circuit tanpa hingar bagi operator yang diberikan sepatutnya sekitar <code>0.18409094298943401</code>.</p></div></div>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="get-support">Dapatkan sokongan<a href="#get-support" class="hash-link" aria-label="Pautan terus ke Dapatkan sokongan" title="Pautan terus ke Dapatkan sokongan" translate="no">​</a></h2>
 <p>Hubungi <a href="mailto:qiskit_ibm@algorithmiq.fi" target="_blank" rel="noopener noreferrer" class="">qiskit_ibm@algorithmiq.fi</a></p>
 <p>Pastikan untuk menyertakan maklumat berikut:</p>
@@ -127,7 +127,7 @@ ke persekitaran tempatan anda.)</p>
 <li class="">ID Kerja Fungsi Qiskit (<code>qiskit-ibm-catalog</code>), <code>job.job_id</code></li>
 <li class="">Keterangan terperinci tentang isu</li>
 <li class="">Sebarang mesej atau kod ralat yang berkaitan</li>
-<li class="">Langkah untuk meniru isu</li>
+<li class="">Langkah untuk menghasilkan semula isu</li>
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="next-steps">Langkah seterusnya<a href="#next-steps" class="hash-link" aria-label="Pautan terus ke Langkah seterusnya" title="Pautan terus ke Langkah seterusnya" translate="no">​</a></h2>
 <div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Cadangan</div><div class="admonitionContent_BuS1"><ul>
