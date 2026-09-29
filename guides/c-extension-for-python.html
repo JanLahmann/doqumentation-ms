@@ -14,8 +14,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.d115d309.css">
-<script src="/assets/js/runtime~main.979c153e.js" defer="defer"></script>
-<script src="/assets/js/main.bf91c606.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.c505607a.js" defer="defer"></script>
+<script src="/assets/js/main.c9e3672d.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/guides/c-extension-for-python" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/guides/c-extension-for-python" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -152,11 +152,11 @@ logik ini kepada ruang Python dalam bahagian berikut.</p>
 </li>
 </ul>
 <p>Dua yang pertama membentuk sebahagian daripada interaksi kami dengan ruang Python, tetapi apabila bekerja dengannya, kami
-hanya perlu mempertimbangkan C API tulen. Tiada interaksi dengan jurubahasa Python
+hanya perlu mempertimbangkan C API tulen. Tiada interaksi dengan pentafsir Python
 dalam kod ini.</p>
-<p>Perhatikan bahawa semua fungsi dan simbol yang ditakrifkan dalam bahagian ini dinyatakan dengan paut <code>static</code>.
-Ini kerana jurubahasa Python tidak akan paut terhadap modul sambungan ini; kami akan menyediakan
-jurubahasa dengan butiran fungsi yang tersedia dalam bahagian seterusnya.</p>
+<p>Perhatikan bahawa semua fungsi dan simbol yang ditakrifkan dalam bahagian ini dinyatakan dengan pautan <code>static</code>.
+Ini kerana pentafsir Python tidak akan memaut terhadap modul sambungan ini; kami akan menyediakan
+pentafsir dengan butiran fungsi yang tersedia dalam bahagian seterusnya.</p>
 <p>Kami tidak akan memperincikan butiran algoritma kod ini; adalah instruktif untuk menggunakan laluan
 Transpiler yang bermakna untuk demonstrasi, tetapi pelaksanaan tepat algoritma tersebut tidak
 penting untuk panduan ini.</p>
@@ -174,7 +174,7 @@ sebarang objek Python.</p>
 <p>Ringkasnya, fungsi ini:</p>
 <ol>
 <li class="">
-<p>Mengikuti tandatangan yang ditakrifkan untuk menerima argumen Python sewenang-wenangnya.</p>
+<p>Mengikuti tandatangan yang ditakrifkan untuk menerima sebarang argumen Python.</p>
 </li>
 <li class="">
 <p>Mentakrifkan ruang untuk menyimpan objek natif-C yang dihuraikan daripada argumen Python.</p>
@@ -185,7 +185,7 @@ argumen kata kunci, dan fungsi yang digunakan untuk menukarnya. Jika ini gagal, 
 menyebarkan ralat.</p>
 </li>
 <li class="">
-<p>Mengagihkan kepada logik perniagaan natif-C bahagian sebelumnya, yang mengubah DAG di tempatnya.</p>
+<p>Menyerahkan kerja kepada logik perniagaan natif-C daripada bahagian sebelumnya, yang mengubah DAG di tempatnya.</p>
 </li>
 <li class="">
 <p>Mengembalikan objek <code>None</code> ruang-Python.</p>
@@ -198,7 +198,7 @@ rujuk untuk maklumat lanjut.</p>
 sebagai fungsi &quot;penukar&quot; untuk digunakan dengan fungsi <code>PyArg_Parse*</code>. Ini sepadan dengan
 kunci <code>O&amp;</code> dalam rentetan format; di sini, kami menggunakan <code>qk_dag_convert_from_python</code> dan
 <code>qk_target_convert_from_python</code>. Fungsi-fungsi ini <em>meminjam</em> objek natif-C daripada argumen Python
-yang ia diterbitkan. Ini bermakna mutasi akan disebarkan ke ruang Python, tetapi juga bahawa
+yang menjadi asal objek tersebut. Ini bermakna mutasi akan disebarkan ke ruang Python, tetapi juga bahawa
 anda harus berhati-hati untuk tidak melepaskan rujukan anda kepada objek Python yang menyokongnya, semasa menggunakan
 hasilnya. Ini adalah standard untuk pengaturcaraan Python C API.</p>
 <p>Seterusnya, kami mentakrifkan maklumat tentang modul ini dan fungsi yang dikandunginya, supaya kami boleh menghantar ia ke
