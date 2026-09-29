@@ -14,8 +14,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.d115d309.css">
-<script src="/assets/js/runtime~main.c505607a.js" defer="defer"></script>
-<script src="/assets/js/main.e4e49e78.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.fd15fb0e.js" defer="defer"></script>
+<script src="/assets/js/main.5d19f45e.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/guides/interoperate-qiskit-qasm2" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/guides/interoperate-qiskit-qasm2" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/guides/interoperate-qiskit-qasm2" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/guides/interoperate-qiskit-qasm2" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/guides/interoperate-qiskit-qasm2" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/guides/interoperate-qiskit-qasm2" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/guides/interoperate-qiskit-qasm2" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/guides/interoperate-qiskit-qasm2" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/guides/interoperate-qiskit-qasm2" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/guides/interoperate-qiskit-qasm2" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/guides/interoperate-qiskit-qasm2" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/guides/interoperate-qiskit-qasm2" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/guides/interoperate-qiskit-qasm2" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/guides/interoperate-qiskit-qasm2" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/guides/interoperate-qiskit-qasm2" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/guides/interoperate-qiskit-qasm2" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/guides/interoperate-qiskit-qasm2" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/guides/interoperate-qiskit-qasm2" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/guides/interoperate-qiskit-qasm2" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -46,12 +46,12 @@ Ini ialah <a class="" href="/api/qiskit/qasm2#load"><code>qasm2.load()</code></a
 <span id="custom-instructions"></span>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="link-openqasm-2-gates-with-qiskit-gates">Hubungkan gate OpenQASM 2 dengan gate Qiskit<a href="#link-openqasm-2-gates-with-qiskit-gates" class="hash-link" aria-label="Pautan terus ke Hubungkan gate OpenQASM 2 dengan gate Qiskit" title="Pautan terus ke Hubungkan gate OpenQASM 2 dengan gate Qiskit" translate="no">​</a></h3>
 <p>Secara lalai, pengimport OpenQASM 2 Qiskit menganggap fail include <code>&quot;qelib1.inc&quot;</code> sebagai pustaka standard <em>de facto</em>.
-Pengimport menganggap fail ini mengandungi tepat gate yang diterangkan mengandunginya dalam <a href="https://arxiv.org/abs/1707.03429" target="_blank" rel="noopener noreferrer" class="">kertas asal yang mentakrifkan OpenQASM 2</a>.
+Pengimport menganggap fail ini mengandungi tepat gate yang diterangkan dalam <a href="https://arxiv.org/abs/1707.03429" target="_blank" rel="noopener noreferrer" class="">kertas asal yang mentakrifkan OpenQASM 2</a>.
 Qiskit akan menggunakan gate terbina dalam dalam <a class="" href="/api/qiskit/circuit_library">pustaka circuit</a> untuk mewakili gate dalam <code>&quot;qelib1.inc&quot;</code>.
 Gate yang ditakrifkan dalam program oleh pernyataan <code>gate</code> OpenQASM 2 secara manual akan, secara lalai, dibina sebagai subkelas <a class="" href="/api/qiskit/qiskit.circuit.Gate">Qiskit <code>Gate</code></a> tersuai.</p>
-<p>Kamu boleh memberitahu pengimport untuk menggunakan kelas <a class="" href="/api/qiskit/qiskit.circuit.Gate"><code>Gate</code></a> tertentu untuk pernyataan <code>gate</code> yang ditemuinya.
-Kamu juga boleh menggunakan mekanisme ini untuk menganggap nama gate tambahan sebagai &quot;terbina dalam&quot;, iaitu, tidak memerlukan takrifan eksplisit.
-Jika kamu menentukan kelas gate mana yang perlu digunakan untuk pernyataan <code>gate</code> di luar <code>&quot;qelib1.inc&quot;</code>, circuit yang terhasil biasanya akan lebih cekap untuk digunakan.</p>
+<p>Anda boleh memberitahu pengimport untuk menggunakan kelas <a class="" href="/api/qiskit/qiskit.circuit.Gate"><code>Gate</code></a> tertentu untuk pernyataan <code>gate</code> yang ditemuinya.
+Anda juga boleh menggunakan mekanisme ini untuk menganggap nama gate tambahan sebagai &quot;terbina dalam&quot;, iaitu, tidak memerlukan takrifan eksplisit.
+Jika anda menentukan kelas gate mana yang perlu digunakan untuk pernyataan <code>gate</code> di luar <code>&quot;qelib1.inc&quot;</code>, litar yang terhasil biasanya akan lebih cekap untuk digunakan.</p>
 <div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>amaran</div><div class="admonitionContent_BuS1"><p>Mulai Qiskit SDK v1.0, <em>pengeksport</em> OpenQASM 2 Qiskit (lihat <a href="#qasm2-export" class="">Eksport Circuit Qiskit ke OpenQASM 2</a>) masih berkelakuan seolah-olah <code>&quot;qelib1.inc&quot;</code> mempunyai lebih banyak gate daripada yang sebenarnya.
 Ini bermakna tetapan lalai pengimport mungkin tidak dapat mengimport program yang dieksport oleh pengeksport kami.
 Lihat <a href="#qasm2-import-legacy" class="">contoh khusus tentang bekerja dengan pengeksport warisan</a> untuk menyelesaikan masalah ini.</p><p>Perbezaan ini ialah tingkah laku warisan Qiskit, dan <a href="https://github.com/Qiskit/qiskit/issues/10737" target="_blank" rel="noopener noreferrer" class="">ia akan diselesaikan dalam keluaran Qiskit kemudian</a>.</p></div></div>
@@ -65,14 +65,14 @@ Ini mempunyai empat maklumat yang diperlukan, mengikut urutan:</p>
 <p><strong>Bilangan parameter sudut</strong> yang diambil oleh gate</p>
 </li>
 <li class="">
-<p><strong>Bilangan qubit</strong> yang digunakan oleh gate</p>
+<p><strong>Bilangan qubit</strong> yang menjadi sasaran tindakan gate</p>
 </li>
 <li class="">
 <p><strong>Kelas konstruktor</strong> Python atau fungsi untuk gate, yang mengambil parameter gate (tetapi bukan qubit) sebagai hujah individu</p>
 </li>
 </ul>
 <p>Jika pengimport menemui definisi <code>gate</code> yang sepadan dengan arahan tersuai yang diberikan, ia akan menggunakan maklumat tersuai itu untuk membina semula objek gate.
-Jika pernyataan <code>gate</code> ditemui yang sepadan dengan <code>name</code> arahan tersuai, tetapi tidak sepadan dengan bilangan parameter dan bilangan qubit, pengimport akan menimbulkan <a class="" href="/api/qiskit/qasm2#qasm2parseerror"><code>QASM2ParseError</code></a>, untuk menunjukkan ketidakpadanan antara maklumat yang diberikan dan program.</p>
+Jika pernyataan <code>gate</code> ditemui yang sepadan dengan <code>name</code> arahan tersuai, tetapi bilangan parameter atau bilangan qubitnya tidak sepadan, pengimport akan menimbulkan <a class="" href="/api/qiskit/qasm2#qasm2parseerror"><code>QASM2ParseError</code></a>, untuk menunjukkan ketidakpadanan antara maklumat yang diberikan dan program.</p>
 <p>Selain itu, hujah kelima <code>builtin</code> boleh secara pilihan ditetapkan kepada <code>True</code> untuk menjadikan gate tersedia secara automatik dalam program OpenQASM 2, walaupun ia tidak ditakrifkan secara eksplisit.
 Jika pengimport menemui definisi <code>gate</code> eksplisit untuk arahan tersuai terbina dalam, ia akan menerimanya secara senyap.
 Seperti sebelumnya, jika definisi eksplisit dengan nama yang sama tidak serasi dengan arahan tersuai yang diberikan, <a class="" href="/api/qiskit/qasm2#qasm2parseerror"><code>QASM2ParseError</code></a> akan ditimbulkan.
@@ -119,8 +119,8 @@ Yang kedua ialah fungsi <code>math.atan2</code>, yang mewakili operasi matematik
 <span id="strict"></span>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="strict-mode">Mod ketat<a href="#strict-mode" class="hash-link" aria-label="Pautan terus ke Mod ketat" title="Pautan terus ke Mod ketat" translate="no">​</a></h3>
 <p>Secara lalai, penghurai ini lebih santai daripada spesifikasi rasmi.
-Ia membenarkan koma pelacak dalam senarai parameter; titik koma yang tidak perlu (pernyataan kosong); pengabaian pernyataan versi <code>OPENQASM 2.0;</code>; dan beberapa peningkatan kualiti kehidupan lain tanpa mengeluarkan sebarang ralat.
-Walau bagaimanapun, anda boleh menggunakan mod &quot;mengikut huruf spesifikasi&quot; dengan <code>strict=True</code>.</p>
+Ia membenarkan koma pelacak dalam senarai parameter; titik koma yang tidak perlu (pernyataan kosong); pengabaian pernyataan versi <code>OPENQASM 2.0;</code>; dan beberapa kemudahan lain tanpa mengeluarkan sebarang ralat.
+Walau bagaimanapun, anda boleh menggunakan mod &quot;patuh ketat spesifikasi&quot; dengan <code>strict=True</code>.</p>
 <span id="qasm2-export"></span>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="export-a-qiskit-circuit-to-openqasm-2">Eksport Circuit Qiskit ke OpenQASM 2<a href="#export-a-qiskit-circuit-to-openqasm-2" class="hash-link" aria-label="Pautan terus ke Eksport Circuit Qiskit ke OpenQASM 2" title="Pautan terus ke Eksport Circuit Qiskit ke OpenQASM 2" translate="no">​</a></h2>
 <p>Qiskit juga boleh mengeksport <a class="" href="/api/qiskit/qiskit.circuit.QuantumCircuit"><code>QuantumCircuit</code></a> ke OpenQASM 2.

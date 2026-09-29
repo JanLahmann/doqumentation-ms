@@ -14,8 +14,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.d115d309.css">
-<script src="/assets/js/runtime~main.c505607a.js" defer="defer"></script>
-<script src="/assets/js/main.e4e49e78.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.fd15fb0e.js" defer="defer"></script>
+<script src="/assets/js/main.5d19f45e.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/guides/configure-qiskit-local" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -38,7 +38,7 @@
 <p><code>circuit_mpl_style</code>: Helaian gaya lalai yang digunakan untuk sistem output mpl bagi pelukis litar. Nilai yang sah ialah <code>default</code> atau <code>bw</code>.</p>
 </li>
 <li class="">
-<p><code>circuit_mpl_style_path</code>: Laluan untuk pelukis litar cari helaian gaya JSON apabila menggunakan mod output mpl.</p>
+<p><code>circuit_mpl_style_path</code>: Laluan yang digunakan oleh pelukis litar untuk mencari helaian gaya JSON apabila menggunakan mod output mpl.</p>
 </li>
 <li class="">
 <p><code>state_drawer</code>: Ini digunakan untuk menukar sistem lalai bagi kaedah lukisan visualisasi keadaan. Nilai yang sah ialah <code>repr</code>, <code>text</code>, <code>latex</code>, <code>latex_source</code>, <code>qsphere</code>, <code>hinton</code>, atau <code>bloch</code>. Apabila kwarg output tidak ditetapkan secara eksplisit pada kaedah <a class="" href="/api/qiskit/qiskit.quantum_info.DensityMatrix#densitymatrix">qiskit.quantum_info.DensityMatrix.draw</a>, kaedah output yang ditentukan digunakan.</p>
@@ -64,7 +64,7 @@
 <p>Tetapkan pemboleh ubah persekitaran ini untuk mengubah tingkah laku lalai Qiskit:</p>
 <ul>
 <li class="">
-<p><code>QISKIT_PARALLEL</code>: Mengaktifkan multiproses Python untuk memparalelkan operasi tertentu; contohnya, transpilasi melalui berbilang litar dalam Qiskit. Nyatakan nilai boolean.</p>
+<p><code>QISKIT_PARALLEL</code>: Mengaktifkan multiproses Python untuk memparalelkan operasi tertentu; contohnya, transpilasi berbilang litar dalam Qiskit. Nyatakan nilai boolean.</p>
 </li>
 <li class="">
 <p><code>QISKIT_NUM_PROCS</code>: Bilangan maksimum proses selari yang akan dilancarkan untuk operasi selari jika pelaksanaan selari diaktifkan. Nyatakan integer lebih besar daripada sifar.</p>
@@ -76,7 +76,7 @@
 <p><code>QISKIT_FORCE_THREADS</code>: Menentukan bahawa kod berbilang benang harus sentiasa dilaksanakan dalam berbilang benang. Secara lalai, jika anda menjalankan kod berbilang benang dalam bahagian Qiskit yang sudah berjalan dalam proses selari, Qiskit tidak melancarkan berbilang benang tetapi sebaliknya melaksanakan fungsi tersebut secara bersiri. Ini dilakukan untuk mengelakkan kemungkinan membebankan sumber CPU yang terhad. Walau bagaimanapun, jika anda ingin memaksa penggunaan berbilang benang walaupun dalam konteks berbilang proses, tetapkan <code>QISKIT_FORCE_THREADS=TRUE</code>.</p>
 </li>
 <li class="">
-<p><code>QISKIT_SABRE_ALL_THREADS</code>: Mengawal tingkah laku pas susun atur dan penghalaan dalam pengurus pas pratetap Qiskit. Apabila ditetapkan kepada <code>1</code> atau <code>TRUE</code>, ini menggunakan semua CPU yang tersedia untuk menjalankan berbilang percubaan rawak. Ini boleh meningkatkan kualiti keputusan, terutamanya untuk sistem dengan lebih daripada 20 CPU/teras; pertukaran yang berlaku ialah keputusan tidak boleh dihasilkan semula apabila dijalankan pada perkakasan tempatan yang berbeza.</p>
+<p><code>QISKIT_SABRE_ALL_THREADS</code>: Mengawal tingkah laku pas susun atur dan penghalaan dalam pengurus pas pratetap Qiskit. Apabila ditetapkan kepada <code>1</code> atau <code>TRUE</code>, ini menggunakan semua CPU yang tersedia untuk menjalankan berbilang percubaan rawak. Ini boleh meningkatkan kualiti keputusan, terutamanya untuk sistem dengan lebih daripada 20 CPU/teras; walau bagaimanapun, kompromi/kelemahannya ialah keputusan tidak boleh dihasilkan semula apabila dijalankan pada perkakasan tempatan yang berbeza.</p>
 </li>
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="next-steps">Langkah seterusnya<a href="#next-steps" class="hash-link" aria-label="Pautan terus ke Langkah seterusnya" title="Pautan terus ke Langkah seterusnya" translate="no">​</a></h2>

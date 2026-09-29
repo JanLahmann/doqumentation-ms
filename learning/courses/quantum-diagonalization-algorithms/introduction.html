@@ -14,8 +14,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.d115d309.css">
-<script src="/assets/js/runtime~main.c505607a.js" defer="defer"></script>
-<script src="/assets/js/main.e4e49e78.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.fd15fb0e.js" defer="defer"></script>
+<script src="/assets/js/main.5d19f45e.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -25,18 +25,18 @@
 <!-- -->
 <header><h1>Pengenalan</h1></header>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="overview-and-motivation">Gambaran keseluruhan dan motivasi<a href="#overview-and-motivation" class="hash-link" aria-label="Pautan terus ke Gambaran keseluruhan dan motivasi" title="Pautan terus ke Gambaran keseluruhan dan motivasi" translate="no">​</a></h2>
-<p>Selamat datang ke Algoritma Penepatan Kuantum!</p>
-<p>Dunia dipenuhi dengan masalah yang amat penting bagi manusia yang boleh dirumuskan sebagai masalah penepatan matriks. Ini merentas bidang daripada kewangan hingga fizik, dan terpakai kepada sistem yang berbeza seperti tapak pengikatan kimia dan rangkaian pengedaran. Malah kaedah penyelesaian masalah lain seperti pembelajaran mesin memanfaatkan kuasa matriks. Kemajuan dalam pengkomputeran klasik telah memungkinkan penepatan matriks bersaiz luar biasa besar. Namun masih terdapat masalah yang melebihi had algoritma penepatan klasik yang tepat.</p>
-<p>Algoritma pepenjuruan kuantum (QDA) memanfaatkan kuasa komputer kuantum bersama-sama dengan pendekatan klasik. Ini bermaksud perkara yang berbeza untuk algoritma yang berbeza. Dalam sesetengah kes, algoritma menggunakan komputer kuantum untuk menganggar nilai jangkaan matriks dan menggunakan komputer klasik untuk menjalankan algoritma pengoptimuman variasional. Ini benar, sebagai contoh, untuk penyelesai nilai eigen kuantum variasional (VQE). Dalam kes lain, pengukuran kuantum digunakan untuk mengenal pasti subruang yang sesuai untuk memproyeksikan matriks minat kita, dan pepenjuruan matriks yang diproyeksikan dilakukan sepenuhnya secara klasik. Ini menggambarkan kaedah pepenjuruan kuantum berasaskan pensampelan (SQD), antara kaedah yang paling menarik dalam era pengkomputeran kuantum masa kini.</p>
-<p>Kursus ini memberikan gambaran keseluruhan beberapa pendekatan untuk penepatan kuantum. Kami menyediakan latar belakang kaedah klasik yang digunakan, atau yang mendorong algoritma kuantum, dan membimbing anda melalui pelaksanaan algoritma kuantum pada komputer kuantum sebenar. Terdapat perbincangan menyeluruh tentang faktor-faktor yang menentukan skala pendekatan menggunakan algoritma klasik dan kuantum. Ini penting untuk menentukan sama ada masalah anda mendapat manfaat daripada algoritma kuantum tertentu. Dengan menghubungkan pendekatan matematik abstrak dengan perkakasan kuantum terkini, kurikulum ini memperkasakan peserta untuk menavigasi landskap teknik pengkomputeran kuantum yang berkembang pesat.</p>
+<p>Selamat datang ke Algoritma Pepenjuruan Kuantum!</p>
+<p>Dunia dipenuhi dengan masalah yang amat penting bagi manusia yang boleh dirumuskan sebagai masalah pepenjuruan matriks. Ini merentas bidang daripada kewangan hingga fizik, dan terpakai kepada sistem yang berbeza seperti tapak pengikatan kimia dan rangkaian pengedaran. Malah kaedah penyelesaian masalah lain seperti pembelajaran mesin memanfaatkan kuasa matriks. Kemajuan dalam pengkomputeran klasik telah memungkinkan pepenjuruan matriks bersaiz luar biasa besar. Namun masih terdapat masalah yang melebihi had algoritma pepenjuruan klasik yang tepat.</p>
+<p>Algoritma pepenjuruan kuantum (QDA) memanfaatkan kuasa komputer kuantum bersama-sama dengan pendekatan klasik. Ini bermaksud perkara yang berbeza untuk algoritma yang berbeza. Dalam sesetengah kes, algoritma menggunakan komputer kuantum untuk menganggar nilai jangkaan matriks dan menggunakan komputer klasik untuk menjalankan algoritma pengoptimuman variasional. Ini benar, sebagai contoh, untuk penyelesai nilai eigen kuantum variasional (VQE). Dalam kes lain, pengukuran kuantum digunakan untuk mengenal pasti subruang yang sesuai untuk memproyeksikan matriks yang kita kaji, dan pepenjuruan matriks yang diproyeksikan dilakukan sepenuhnya secara klasik. Ini menggambarkan kaedah pepenjuruan kuantum berasaskan pensampelan (SQD), antara kaedah yang paling menarik dalam era pengkomputeran kuantum masa kini.</p>
+<p>Kursus ini memberikan gambaran keseluruhan beberapa pendekatan untuk pepenjuruan kuantum. Kami menyediakan latar belakang kaedah klasik yang digunakan, atau yang mendorong algoritma kuantum, dan membimbing anda melalui pelaksanaan algoritma kuantum pada komputer kuantum sebenar. Terdapat perbincangan menyeluruh tentang faktor-faktor yang menentukan skala pendekatan menggunakan algoritma klasik dan kuantum. Ini penting untuk menentukan sama ada masalah anda mendapat manfaat daripada algoritma kuantum tertentu. Dengan menghubungkan pendekatan matematik abstrak dengan perkakasan kuantum terkini, kurikulum ini memperkasakan peserta untuk menavigasi landskap teknik pengkomputeran kuantum yang berkembang pesat.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="course-learning-goals">Matlamat pembelajaran kursus<a href="#course-learning-goals" class="hash-link" aria-label="Pautan terus ke Matlamat pembelajaran kursus" title="Pautan terus ke Matlamat pembelajaran kursus" translate="no">​</a></h2>
 <p>Dengan menamatkan kursus ini, anda dijangka membina kemahiran dan kecekapan teras berikut. Pelajar akan dapat:</p>
 <ol>
 <li class="">
-<p>Mengenal pasti beberapa aplikasi industri penepatan matriks besar.</p>
+<p>Mengenal pasti beberapa aplikasi industri pepenjuruan matriks besar.</p>
 </li>
 <li class="">
-<p>Mengenal pasti beberapa pendekatan penepatan klasik dan rakan sejawat kuantum mereka.</p>
+<p>Mengenal pasti beberapa pendekatan pepenjuruan klasik dan padanan kuantumnya.</p>
 </li>
 <li class="">
 <p>Menjelaskan faktor-faktor yang menentukan kecekapan QDA.</p>
@@ -59,7 +59,7 @@
 </ol>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="course-structure">Struktur kursus<a href="#course-structure" class="hash-link" aria-label="Pautan terus ke Struktur kursus" title="Pautan terus ke Struktur kursus" translate="no">​</a></h2>
 <p>Kursus ini terdiri daripada beberapa pelajaran. Setiap pelajaran mempunyai beberapa soalan semak sepanjang teks, supaya anda boleh mempraktikkan kemahiran baharu atau menyemak pemahaman anda semasa belajar. Ini tidak diwajibkan.</p>
-<p>Di penghujung kursus, terdapat kuiz 20 soalan. Anda mesti mendapat sekurang-kurangnya 70% dalam kuiz ini untuk mendapatkan lencana Algoritma Penepatan Kuantum anda, melalui Credly. Jika anda mendapat sekurang-kurangnya 70%, lencana anda akan dihantar secara automatik melalui e-mel kepada anda, tidak lama selepas itu. Terdapat had bilangan kali kuiz ini boleh diambil. Lihat kuiz untuk maklumat lanjut.</p>
+<p>Di penghujung kursus, terdapat kuiz 20 soalan. Anda mesti mendapat sekurang-kurangnya 70% dalam kuiz ini untuk mendapatkan lencana Algoritma Pepenjuruan Kuantum anda, melalui Credly. Jika anda mendapat sekurang-kurangnya 70%, lencana anda akan dihantar secara automatik melalui e-mel kepada anda, tidak lama selepas itu. Terdapat had bilangan kali kuiz ini boleh diambil. Lihat kuiz untuk maklumat lanjut.</p>
 <p>Struktur kursus adalah seperti berikut:</p>
 <ul>
 <li class="">
@@ -69,16 +69,16 @@
 <p>Pelajaran 1: Penyelesai nilai eigen kuantum variasional</p>
 </li>
 <li class="">
-<p>Pelajaran 2: Penepatan kuantum Krylov</p>
+<p>Pelajaran 2: Pepenjuruan kuantum Krylov</p>
 </li>
 <li class="">
-<p>Pelajaran 3: Penepatan kuantum berasaskan pensampelan</p>
+<p>Pelajaran 3: Pepenjuruan kuantum berasaskan pensampelan</p>
 </li>
 <li class="">
 <p>Pelajaran 4: Aplikasi SQD</p>
 </li>
 <li class="">
-<p>Pelajaran 5: Penepatan kuantum Krylov berasaskan pensampelan</p>
+<p>Pelajaran 5: Pepenjuruan kuantum Krylov berasaskan pensampelan</p>
 </li>
 <li class="">
 <p>Peperiksaan untuk lencana</p>
